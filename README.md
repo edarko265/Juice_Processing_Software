@@ -20,7 +20,8 @@ The system streamlines everything from customer entry to final pickup — with o
 ### Default login page
 - Use "employee123" default password to login the system
 - The password could be changed in the setting page
-<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/e7d52d87-41b3-4540-8137-811e9bf1d01f" />
+<img width="1465" height="888" alt="login page" src="https://github.com/user-attachments/assets/c278dc8a-91e3-4562-89fe-a500da730852" />
+
 
 
 ### 1. Dashboard
@@ -32,40 +33,45 @@ The system streamlines everything from customer entry to final pickup — with o
 - Auto-calculates juice quantity, pouch count, and price (based on city).  
 - Optional notes for special cases.  
 - Generates **crate QR codes** based on employee input.
-<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/845b90cc-db60-4baa-a2a2-58e9d8576216" />
+<img width="1470" height="913" alt="customer entry" src="https://github.com/user-attachments/assets/c8acc37b-6f8b-4735-b2d9-7a54541292ed" />
+
 
 ### 3. Crate Management
 - Employees scan crate QR codes once apples are ready.  
 - Order status updates automatically.  
 - Moves to *Juice Processing* once all crates are scanned.
-<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/ffed46a6-a6cc-4a17-8930-d5d08fc54271" />
+<img width="1470" height="956" alt="create handle" src="https://github.com/user-attachments/assets/e7f50107-2f9e-45a0-957a-ea005287c72f" />
+
 
 ### 4. Juice Processing
 - Shows orders ready for juice extraction and pouch filling.  
 - Generates **Box QR codes** and sends to printer.  
 - Sends **Customer Name + Expiry Date** to the Videojet industrial printer.  
 - Employees mark orders as *done* after processing, labeling, and packing.
-<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/912e83d8-78cc-435d-8f16-4aefe6269922" />
+<img width="1470" height="956" alt="juice station" src="https://github.com/user-attachments/assets/1091419a-03c9-41c6-92a3-eeb5942745bf" />
+
 
 ### 5. Load Boxes → Pallet
 - Each pallet has its own QR code (holds up to **4 boxes**).  
 - Employees scan box QR codes, then assign them to pallets.  
 - Pallets can be moved to storage, even in different cities.
 - If the customer origin of the box is Kuopio, then scan the shelf QR codes immediately 
-<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/955af093-7267-4feb-8b2f-a526ad6a4f8a" />
+<img width="1470" height="956" alt="box scan" src="https://github.com/user-attachments/assets/024251a2-3f86-4936-bffe-e11f50ccd005" />
+
 
 ### 6. Load Pallet → Shelf
 - Each shelf has its own QR code (holds **1 pallet**).  
 - Employees scan pallet → shelf.  
 - System automatically sends an **SMS notification** to the customer when their order is shelved.
-<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/00eb5c43-2695-400c-b323-6b22c58c24c4" />
+<img width="1470" height="956" alt="shelve scan" src="https://github.com/user-attachments/assets/6f5c116b-a2de-4878-876c-438d926e37a3" />
+
 
 ### 7. Pickup Coordination
 - Search by **customer name** or **phone number**.  
 - System shows which shelf contains the order.  
 - Employees mark orders as *picked up* once collected.
-<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/6b346650-6c6c-43df-80fa-c6679caa3c6b" />
-<img width="790" height="595" alt="image" src="https://github.com/user-attachments/assets/8293b212-c8ac-4cb6-9a4b-47d6241a5b19" />
+<img width="1470" height="956" alt="pick up search" src="https://github.com/user-attachments/assets/6760ef0a-8bae-4fe4-bb9a-93ee2922141b" />
+<img width="1470" height="956" alt="mark as done" src="https://github.com/user-attachments/assets/8a797c9c-cc4d-433b-9a76-0bca872f441f" />
 
 
 ### 8. Settings (Admin Only)
@@ -77,7 +83,18 @@ The system streamlines everything from customer entry to final pickup — with o
 ### 9. Customer Management
 - Allows viewing, editing, and removing existing customer records.
 - Use the admin password to delete any customers -> to prevent employee misbehaviors.
-<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/3f7a0e27-c201-48c3-8112-c1d79541558f" />
+<img width="1468" height="462" alt="Customer management" src="https://github.com/user-attachments/assets/4feb0fc5-3fa5-497e-9f41-92c158d36a6c" />
+
+
+
+### 10. SMS Notification
+- After the boxes are scanned onto the shelf, an SMS is received by the customer to pick up the order.
+![sms notice](https://github.com/user-attachments/assets/d96b67c5-42e4-4182-b782-e085ec867936)
+
+### 11. SMS Notification
+- Used Videojet 6330 printer for the Printing of pouches.
+- This printer uses the Zypher communication with TCP.
+![Videojet 6330](https://github.com/user-attachments/assets/197ce254-c678-4951-b188-02857051e96e)
 
 ---
 
